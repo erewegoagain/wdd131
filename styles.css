@@ -1,0 +1,42 @@
+h1{
+    text-transform: uppercase; 
+}
+
+h2{
+    color:lightblue;
+    font-size: 15px;
+}
+header{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+h4 {
+    color:black;
+    font-style: italic;
+}
+
+ol {
+    padding-left: 20px; /* Optional: Indent the list */
+  }
+
+  ol li {
+    margin-bottom: 1em; /* Adds space between list items */
+  }
+  
+  body {
+    border: 2px solid #ccc; /* Light gray border */
+    padding: 40px; 
+    border-radius: 1px; 
+    background-color: #f9f9f9; 
+    max-width: 600px;
+    align-items: center;
+  }
+
+  img {
+    display: block; 
+    margin: 0 auto;
+    width: 150px;
+    height: auto; 
+  }
+
