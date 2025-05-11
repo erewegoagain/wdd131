@@ -12,6 +12,7 @@ img {
 	max-width: 100%;
   border: white 5px solid;
   align-items: center;
+  box-shadow: #333 0px 5px 10px;
 }
 nav {
     display: flex;
