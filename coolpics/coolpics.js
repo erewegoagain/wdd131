@@ -28,7 +28,11 @@ function enlargeImage(event) {
     <img src="${final}" alt="${image.alt}">
     <button class="close-viewer">X</button>
   `;
-  modal.showModal();
+  modal.showModal()
+    const close = modal.querySelector('.close-viewer');
+    close.addEventListener('click', () => {
+        modal.close();
+});
 }
 
 modal.addEventListener('click', (event) => {
