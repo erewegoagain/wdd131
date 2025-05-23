@@ -110,6 +110,6 @@ dialog img {
 
 .close-viewer {
  position: absolute;
- top:20vh
-
+ top:20vh;
+ right: 5vw;
 }
