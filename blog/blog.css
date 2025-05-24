@@ -34,7 +34,10 @@ nav > ul {
     padding: 20px;
 
 }
-
+.border {
+  border-left: 3px solid rgb(165, 127, 255);
+  padding: 3em;
+}
 
 .book {
     display: grid;
@@ -42,15 +45,15 @@ nav > ul {
     align-items: center;
     justify-items: center;
     text-align: left;
-    border-left: 3px solid rgb(165, 127, 255);
-    padding:20px
+  
+
 }
 
 .summary {
     padding: 30px;
     display: grid;
     text-align: right;
-    justify-items: end;
+    justify-items: right;
     justify-content: left;
     
 }
