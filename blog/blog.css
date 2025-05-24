@@ -4,27 +4,56 @@
 }
 
 
-nav {
-    display: flex;
-    justify-content: space-around; 
-    align-items:end 
-}
-nav {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-  padding: 1rem;
-  text-align: center;
-  font-style: underline;
-}
 
 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
-
-nav > il {
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+    margin-bottom:10px;
+    align-items: center;
+}
+nav > ul {
+    border-top: 2px solid rgb(165, 127, 255);
+    border-bottom: 2px solid rgb(165, 127, 255);
     font-family: Arial, Helvetica, sans-serif;
     display: grid; 
     grid-template-columns: 100px 100px 100px ;
     justify-items: end;
     justify-content: end;
+    list-style: none;
+    padding: 20px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr; /* Book reviews take 2x space, filter takes 1x */
+    gap: 20px;
+    padding: 20px;
+
+}
+
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    border-left: 3px solid rgb(165, 127, 255);
+    padding:20px
+}
+
+.summary {
+    padding: 30px;
+    display: grid;
+    text-align: right;
+    justify-items: end;
+    justify-content: left;
+    
+}
+.filter{
+    border:3px solid rgb(165, 127, 255)
 }
