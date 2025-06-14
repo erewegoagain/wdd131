@@ -43,6 +43,9 @@ function participantTemplate(count) {
 document.getElementById("add").addEventListener("click", addParticipant);
 
 
+
+
+
 let count = 1
 
 function addParticipant() {
@@ -52,23 +55,32 @@ function addParticipant() {
     
 }
 
-document.getElementById("submitButton").addEventListener("submit", submitForm)
-document.getElementById("submitButton").addEventListener("submit", submitForm)
-
- function submitForm(event) {
- event.preventDefault();
- element.classlist.add('hide')
- const success = sucessTemplate(info)
- document.getElementById("add").insertAdjacentHTML("beforebegin", success)
- // do the rest of the stuff
- }
+document.getElementById("registrationForm").addEventListener("submit", submitForm)
+let info = {
+    name: "Example",
+    count: 1,
+    fees: 42.00
+}
 
 function successTemplate(info) {
     return  `
-    <section class="${count}">`
+    <summary>Thank you, ${info.name} for registering. You have registered ${info.count} participants and owe $${info.fees} in fees.</summary>
+    `
     
 }
 
+ function submitForm(event) {
+ event.preventDefault();
+ document.getElementById("registrationForm").classList.add('hide');
+ info.name = document.getElementById("adult_name").value;
+ info.count = count;
+ info.fees = totalFees();
+ const success = successTemplate(info);
+ document.getElementById("summary").insertAdjacentHTML("beforebegin", success);
+ }
+
+
+ 
  function totalFees() {
 // the selector below lets us grab any element that has an id that begins with "fee"
 let feeElements = document.querySelectorAll("[id^=fee]");
@@ -83,7 +95,7 @@ const total = feeElements.reduce((sum, feeElement) => {
     }, 0);
 // sum up all of the fees. Something like Array.reduce() could be very helpful here :) Or you could use a Array.forEach() as well.
 // Remember that the text that was entered into the input element will be found in the .value of the element.
-
+return total
 // once you have your total make sure to return it!
 
 }
