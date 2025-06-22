@@ -1,11 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
 img {
 	max-width: 100%;
+}
+
+form.search {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 1em 0;
+    max-width: 400px;
+    justify-content: center;
+    
 }
 
 .search {
     display: flex;
     flex-direction: row;
-    border: 2px solid #333;
+    
+    
 }
 
 h1 {
@@ -14,6 +29,28 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
+
+form.search img {
+    width: 24px;
+    height: 24px;
+}
+
+#title {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title img {
+    width: 124px;
+    height: 124px;
+    justify-content: center;
+}
+.social a img {
+    width:32px;
+    height:32px;
+}
+
 
  @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400&display=swap");
  :root {
@@ -25,7 +62,11 @@ h1 {
  }
 
  @media screen and (min-width:600px){
-header {
+img {
+	max-width: 100%;
+}
+
+    header {
     display:flex;
     flex-direction: column;
 } 
@@ -56,9 +97,9 @@ footer {
     display: flex;
     flex-direction: row;
     margin: 0;
+    padding: 40px;
 
 }
-#fooddetail
 #fooddetail img {
     object-fit: cover;
 }
@@ -66,13 +107,14 @@ footer {
 #fooddetail #food-summary{
     display:flex;
     flex-direction: column;
+    padding: 40px;
 }
 #fooddetail #foodtype {
     display: inline-block;
     border: 2px solid #333;
     padding: 2px 8px;
     }
-#social {
+.social {
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -81,9 +123,12 @@ footer {
 
  }
 @media screen and (max-width:599px) {
+
+
 header {
     display:flex;
     flex-direction: column;
+    justify-content: center;
 } 
 main {
     display:flex;
@@ -105,6 +150,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 0;
+    padding: 40px;
 
 }
 #fooddetail #foodtype {
@@ -112,10 +158,16 @@ footer {
     border: 2px solid #333;
     padding: 2px 8px;
     }
-#social {
+.social {
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     height:auto;
  }
+.social a{
+    display:flex;
+    justify-content: center;
+}
+
 }
