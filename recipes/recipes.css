@@ -100,7 +100,7 @@ footer {
     padding: 40px;
 
 }
-#fooddetail img {
+#fooddetail .img {
     object-fit: cover;
 }
 
@@ -153,7 +153,7 @@ footer {
     padding: 40px;
 
 }
-#fooddetail #foodtype {
+#fooddetail .foodtype {
     display: inline-block;
     border: 2px solid #333;
     padding: 2px 8px;
